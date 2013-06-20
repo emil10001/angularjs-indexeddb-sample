@@ -1,0 +1,17 @@
+<div class="hero-unit">
+    <p>This sample list is based on the following tutorial:<br>
+    <a href="http://www.html5rocks.com/en/tutorials/indexeddb/todo/">http://www.html5rocks.com/en/tutorials/indexeddb/todo/</a></p>
+    <p>Add a new item:<br>
+    <form ng-submit="addItem()">
+        <input type="text" ng-model="itemname" size="30" placeholder="item name">
+        <button class="btn-primary" type="submit"><i class="icon-plus icon-white"></i></button>
+    </form>
+    </p>
+    <p>Items in your list:</p>
+    <p> <input type="text" ng-model="search" class="search-query" placeholder="Search"> </p>
+    <div ng-repeat="item in items | filter:search | orderBy:'name'">
+        {{item.text}}
+        {{item.timeStamp}}
+        <a class="btn btn-mini btn-danger" ng-click="deleteItem(item)"><i class="icon-remove icon-white"></i></a>
+    </div>
+</div>

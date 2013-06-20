@@ -1,0 +1,1 @@
+This is an in-progress sample app to demonstrate indexeddb usage in an AngularJS app. It's unfinished and doesn't currently work. At this point, there's nothing useful in this repo, check back in a couple of days.
