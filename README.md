@@ -1,1 +1,1 @@
-This is an in-progress sample app to demonstrate indexeddb usage in an AngularJS app. It's unfinished and doesn't currently work. At this point, there's nothing useful in this repo, check back in a couple of days.
+This is a sample app to demonstrate indexeddb usage in an AngularJS app. It uses the [IDBWrapper](https://github.com/jensarps/IDBWrapper) lib, and includes a [polyfill library](https://github.com/axemclion/IndexedDBShim) for browsers that don't support IndexedDB (though, I have yet to test if IndexedDBShim actually kicks in yet).
